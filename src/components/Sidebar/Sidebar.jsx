@@ -31,7 +31,7 @@ const Sidebar = () => {
   ];
   return (
     <div className="py-8 w-[280px] h-[1024px] bg-white flex flex-col gap-8 relative">
-      <div className="w-[178px] h-[52px] mx-auto bg-[#D9D9D9] flex items-center justify-center">
+      <div className="w-7/10 h-[52px] mx-auto bg-[#D9D9D9] flex items-center justify-center">
         <Gallery variant="Bold" size={24} />
       </div>
 

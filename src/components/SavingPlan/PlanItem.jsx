@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-const PlanItem = ({ key, planItemData }) => {
+const PlanItem = ({ planItemData }) => {
   const savedPercent = Math.floor(
     (planItemData.savedAmount / planItemData.totalAmount) * 100
   );
@@ -14,7 +14,7 @@ const PlanItem = ({ key, planItemData }) => {
     }
   );
   return (
-    <div key={key} className="p-2">
+    <div className="p-2">
       <div className="flex justify-between items-center mb-3">
         <h3 className="font-medium ">{planItemData.planTitle}</h3>
         <p className="text-xs text-[#0D163A]">Target: {formattedDate}</p>

@@ -4,6 +4,8 @@ import Searchbar from "./components/Searchbar/Searchbar";
 import UserAccountSection from "./components/UserAccountSection/UserAccountSection";
 import SavingPlan from "./components/SavingPlan/SavingPlan";
 import RecentTransaction from "./components/RecentTransaction/RecentTransaction";
+import LineChart from "./components/LineChart/LineChart";
+import Overview from "./components/Overview/Overview";
 
 const App = () => {
   return (
@@ -20,16 +22,16 @@ const App = () => {
         </div>
 
         <div className="px-8 py-4 grid grid-cols-12 gap-8">
-          <div className="col-span-8 ">
-            <div className="bg-red-300" />
+          <div className="col-span-full lg:col-span-8 ">
+            <Overview />
           </div>
-          <div className="col-span-4">
+          <div className="col-span-6 lg:col-span-4">
             <SavingPlan />
           </div>
         </div>
         <div className="px-8 py-4 grid grid-cols-12 gap-8">
           <div className="col-span-8 ">
-            <div className="bg-red-300" />
+            <LineChart />
           </div>
           <div className="col-span-4">
             <RecentTransaction />

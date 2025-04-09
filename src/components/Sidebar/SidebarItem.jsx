@@ -1,12 +1,11 @@
 import React from "react";
 
-const SidebarItem = ({ icon: Icon, title, active, key }) => {
+const SidebarItem = ({ icon: Icon, title, active }) => {
   return (
     <div className="w-[258px]  h-[64px] flex items-center relative">
       {active && <div className="absolute left-0 h-12 w-1 bg-[#4745A4]"></div>}
       <div
         className={` m-auto  flex items-center  justify-left gap-4 w-[130px]  `}
-        key={key}
       >
         <Icon
           size={24}

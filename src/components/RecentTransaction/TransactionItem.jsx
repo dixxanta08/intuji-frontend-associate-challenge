@@ -1,7 +1,7 @@
 import React from "react";
 import { Gallery } from "iconsax-react";
 
-const TransactionItem = ({ key, transactionItem }) => {
+const TransactionItem = ({ transactionItem }) => {
   const formattedDate = new Date(transactionItem.date).toLocaleDateString(
     "en-US",
     {
@@ -11,7 +11,7 @@ const TransactionItem = ({ key, transactionItem }) => {
     }
   );
   return (
-    <div key={key} className="p-2 flex justify-between items-center">
+    <div className="p-2 flex justify-between items-center">
       <div className="flex items-center gap-2  h-full">
         <div className="w-12 h-12 rounded-full bg-[#00000020]  flex items-center justify-center">
           <Gallery size={24} color="#0D163A" variant="Bold" />
