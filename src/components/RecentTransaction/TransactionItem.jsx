@@ -18,11 +18,11 @@ const TransactionItem = ({ transactionItem }) => {
         </div>
         <div className="flex flex-col flex-shrink-0">
           <h3 className="font-semibold text-base">{transactionItem.title}</h3>
-          <p className="text-xs text-[#0D163A]/50">{formattedDate}</p>
+          <p className="text-xs text-primary-light">{formattedDate}</p>
         </div>
       </div>
       <div className="flex flex-col justify-between items-center ">
-        <p className="text-base font-semibold text-[#0D163A]">
+        <p className="text-base font-semibold text-primary">
           ${transactionItem.amount}
         </p>
         <p

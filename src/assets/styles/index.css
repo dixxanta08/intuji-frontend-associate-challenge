@@ -7,3 +7,32 @@
 * {
   @apply font-plus-jakarta-sans;
 }
+.text-primary {
+  @apply text-[#0D163A];
+}
+.text-primary-light {
+  @apply text-[#0D163A]/50;
+}
+
+.border-secondary {
+  @apply border-[#DEDEDE];
+}
+.border-secondary:hover {
+  @apply border-[#0D163A]/50 transition-colors duration-300 ease-out;
+}
+
+hr {
+  @apply text-[#0D163A]/20;
+}
+
+.sidebar-item {
+  @apply transition-colors duration-500 ease-out cursor-pointer;
+}
+
+.sidebar-item:hover {
+  @apply bg-[#d1d1fc];
+}
+
+.sidebar-item:hover p {
+  @apply font-medium text-[#0D163A]/60;
+}

@@ -7,7 +7,7 @@ const Searchbar = () => {
       <div className="flex gap-2 items-center justify-center">
         <button
           aria-label="Search"
-          className="flex items-center justify-center text-[#0D163A] "
+          className="flex items-center justify-center text-primary "
         >
           <SearchNormal size={16} />
         </button>
@@ -18,7 +18,7 @@ const Searchbar = () => {
         <input
           type="text"
           id="searchInput"
-          className="w-full border-none active:outline-none focus:outline-none bg-white text-[#0D163A] placeholder:text-[#0D163A]/50"
+          className="w-full border-none active:outline-none focus:outline-none bg-white text-primary placeholder:text-primary-light"
           placeholder="Search here..."
           aria-describedby="searchHelp"
         />

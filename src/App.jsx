@@ -30,7 +30,7 @@ const App = () => {
         />
       )}
 
-      <div className="flex-1 overflow-y-scroll ">
+      <div className="flex-1 overflow-y-scroll h-screen">
         <div className="p-8 pb-4 grid grid-cols-12 gap-6">
           <div className="col-span-7 lg:col-span-8">
             <Searchbar />

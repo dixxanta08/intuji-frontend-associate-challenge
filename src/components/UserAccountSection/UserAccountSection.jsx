@@ -9,10 +9,10 @@ import React from "react";
 const UserAccountSection = () => {
   return (
     <div className="w-full rounded-[64px] p-2 bg-white flex items-center justify-between gap-2">
-      <div className="flex-1 p-3 rounded-[100px] border border-[#DEDEDE] flex justify-center">
+      <div className="flex-1 p-3 rounded-[100px] border border-secondary flex justify-center">
         <NotificationBing size={24} color="#0D163A" variant="Linear" />
       </div>
-      <div className="flex-1 p-3 rounded-[100px] border border-[#DEDEDE]  justify-center hidden xl:flex">
+      <div className="flex-1 p-3 rounded-[100px] border border-secondary  justify-center hidden xl:flex">
         <MessageText size={24} color="#0D163A" variant="Linear" />
       </div>
       <div className="flex items-center gap-3 justify-between  overflow-hidden">

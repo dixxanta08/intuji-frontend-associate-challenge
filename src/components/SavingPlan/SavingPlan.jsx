@@ -33,7 +33,7 @@ const SavingPlan = () => {
           See All
         </a>
       </div>
-      <hr className="text-[#0D163A]/20" />
+      <hr />
       <div className="flex flex-col gap-4">
         {savingPlanItems.map((item, index) => (
           <PlanItem planItemData={item} key={item.planTitle} />

@@ -127,13 +127,13 @@ const LineChart = () => {
         <div className="flex items-center justify-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#4745A4]"></div>
-            <p className="text-sm text-[#0D163A]">Label1</p>
+            <p className="text-sm text-primary">Label1</p>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#F9BA33]"></div>
-            <p className="text-sm text-[#0D163A]">Label2</p>
+            <p className="text-sm text-primary">Label2</p>
           </div>
-          <select className="border border-[#0D163A]/20 rounded-md p-2 text-sm text-[#0D163A]/50">
+          <select className="border border-secondary rounded-md p-2 text-sm text-primary-light">
             <option value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>
             <option value="yearly">Yearly</option>

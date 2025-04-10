@@ -38,8 +38,8 @@ const Sidebar = () => {
         isCollapsed
           ? "w-0 -translate-x-full  sm:w-[64px] sm:-translate-0"
           : "w-[256px]"
-      } max-h-screen min-h-screen  bg-white flex flex-col gap-8 sm:relative
-      z-20 absolute`}
+      }  bg-white flex flex-col gap-8 sm:relative
+      z-20 absolute `}
     >
       <button
         onClick={() => toggleSidebar()}
@@ -61,20 +61,22 @@ const Sidebar = () => {
           <ArrowLeft size={24} color="#0D163A" variant="Bold" />
         )}
       </button>
-      <div className={`${isCollapsed && "hidden sm:block"} `}>
-        <div className="w-7/10 py-2 mx-auto bg-[#D9D9D9] flex items-center justify-center">
+      <div
+        className={`${isCollapsed && "hidden sm:flex"} flex-1 flex flex-col `}
+      >
+        <div className="w-7/10 py-2 mb-2 mx-auto bg-[#D9D9D9] flex items-center justify-center">
           <Gallery variant="Bold" size={24} />
         </div>
 
         <div className="flex flex-col items-center justify-start w-full gap-8">
           <SidebarMenu menuItems={menuItems} isCollapsed={isCollapsed} />
-          <hr className="w-8/10 text-[#0D163A]/30" />
+          <hr className="w-8/10" />
           <SidebarMenu
             menuItems={secondaryMenuItems}
             isCollapsed={isCollapsed}
           />
         </div>
-        <div className="  sm:mt-36">
+        <div className="  flex-1 flex flex-col justify-end ">
           <SidebarMenu menuItems={footerMenuItems} isCollapsed={isCollapsed} />
         </div>
       </div>

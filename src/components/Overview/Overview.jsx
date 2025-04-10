@@ -12,6 +12,7 @@ const Overview = () => {
       color: "#FFFFFF",
       bgColor: "#4745A4",
       changeColor: "#3BBB6E",
+      countAnimation: true,
     },
     {
       icon: <Save2 size={32} variant="Bulk" color="#3BBB6E" />,
