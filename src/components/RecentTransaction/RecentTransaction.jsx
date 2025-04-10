@@ -29,7 +29,7 @@ const RecentTransaction = () => {
     },
   ];
   return (
-    <div className="h-[402px] p-4 rounded-2xl bg-white flex flex-col gap-6">
+    <div className="h-full p-4 rounded-2xl bg-white flex flex-col gap-6">
       <div className="flex justify-between items-center x">
         <h2 className="text-lg font-bold tracking-tight">Recent Transaction</h2>
         <a href="#" className="text-[#4745A4]">

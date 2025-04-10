@@ -39,9 +39,9 @@ const Overview = () => {
     },
   ];
   return (
-    <div className="p-6 bg-white rounded-lg h-[430px]">
+    <div className="p-6 bg-white rounded-lg min-h-[430px]">
       <h2 className="text-lg font-semibold">Overview</h2>
-      <div className="grid grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(288px,_1fr))] lg:grid-cols-2 gap-4 mt-4">
         {overviewItems.map((item, index) => (
           <OverviewItem overviewItem={item} key={item.title} />
         ))}

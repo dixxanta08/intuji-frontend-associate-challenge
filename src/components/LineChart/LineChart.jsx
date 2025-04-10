@@ -121,8 +121,8 @@ const LineChart = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg  h-[402px]">
-      <div className="flex items-center justify-between mb-4">
+    <div className="bg-white p-6 rounded-lg  h-[402px] flex flex-col gap-4">
+      <div className="flex flex-col sm:flex-row items-start justify-start sm:items-center sm:justify-between mb-4">
         <h2 className="text-lg font-semibold">Analytics</h2>
         <div className="flex items-center justify-center gap-4">
           <div className="flex items-center gap-2">
@@ -140,7 +140,7 @@ const LineChart = () => {
           </select>
         </div>
       </div>
-      <div className="h-[calc(100%-2rem)]">
+      <div className="flex-grow ">
         <Line data={data} options={options} />
       </div>
     </div>
